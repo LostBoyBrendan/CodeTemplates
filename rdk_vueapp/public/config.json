@@ -1,0 +1,6 @@
+{
+    "ServerAddress": "http://localhost:54784/",
+    "TranslationAddress": "https://translationapi.devinspire.co.za/api/",
+    "DefaultLanguage": "gb",
+    "SystemVersion": "1.0.0"
+}
