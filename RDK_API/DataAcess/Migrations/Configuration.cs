@@ -25,9 +25,9 @@ namespace DataAccess.Migrations
 
             if (roleManager.Roles.Count() == 0)
             {
-                roleManager.Create(new IdentityRole { Name = "SuperAdmin" });
-                roleManager.Create(new IdentityRole { Name = "Admin" });
-                roleManager.Create(new IdentityRole { Name = "User" });
+                roleManager.Create(new ApplicationRole { Name = "SuperAdmin", CanView = true, CanCreate = true, CanEdit = true, CanDelete = true });
+                roleManager.Create(new ApplicationRole { Name = "Admin", CanView = true, CanCreate = true, CanEdit = true, CanDelete = true });
+                roleManager.Create(new ApplicationRole { Name = "User", CanView = true, CanCreate = false, CanEdit = false, CanDelete = false });
             }
         }
     }

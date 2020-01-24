@@ -77,14 +77,15 @@
   <ItemGroup>
     <Compile Include="Context\DataContext.cs" />
     <Compile Include="InitialiseDatabse\Initialise.cs" />
-    <Compile Include="Migrations\202001191355561_InitialCreate.cs" />
-    <Compile Include="Migrations\202001191355561_InitialCreate.Designer.cs">
-      <DependentUpon>202001191355561_InitialCreate.cs</DependentUpon>
+    <Compile Include="Migrations\202001232236446_InitialCreate.cs" />
+    <Compile Include="Migrations\202001232236446_InitialCreate.Designer.cs">
+      <DependentUpon>202001232236446_InitialCreate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\ApplicationRole.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -92,8 +93,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202001191355561_InitialCreate.resx">
-      <DependentUpon>202001191355561_InitialCreate.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202001232236446_InitialCreate.resx">
+      <DependentUpon>202001232236446_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
